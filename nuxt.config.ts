@@ -18,4 +18,14 @@ export default defineNuxtConfig({
   svgo: {
     defaultImport: "component",
   },
+  app: {
+    head: {
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800;900&family=Muli:wght@300;400;600;700;800;900&display=swap",
+        },
+      ],
+    },
+  },
 });
