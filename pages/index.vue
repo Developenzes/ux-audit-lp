@@ -1,13 +1,24 @@
-<script setup>
-defineProps({
-  data: String,
-});
-</script>
-
 <template>
-  <main>
-    <div>
-      <p>test</p>
-    </div>
+  <main class="container main">
+    <TopSection />
+    <UxAudit />
+    <Testimonials />
+    <ResultsWay />
+    <BottomSection />
   </main>
 </template>
+
+<style lang="scss">
+.main {
+  padding-top: 80px;
+  padding-bottom: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  @media (max-width: 768px) {
+    padding-top: 50px;
+    gap: 50px;
+  }
+}
+</style>
