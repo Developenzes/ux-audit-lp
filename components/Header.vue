@@ -2,17 +2,21 @@
 defineProps({
   data: Object,
 });
+
+const showAlert = () => {
+  alert("Button clicked!");
+};
 </script>
 
 <template>
   <header class="header">
-    <div class="container header-container">
-      <div class="logo"><SvgoLogo /></div>
-      <div class="button"><Button :text="data.buttonText" /></div>
+    <section class="container header-container">
+      <SvgoLogo class="logo" />
+      <Button class="button" :text="data.buttonText" :onClick="showAlert" />
       <h1 class="header-title">
         {{ data.title }}
       </h1>
-    </div>
+    </section>
   </header>
 </template>
 
@@ -33,7 +37,8 @@ defineProps({
   align-items: center;
   justify-items: center;
   gap: 80px;
-  padding: 28px 28px 56px;
+  padding-top: 30px;
+  padding-bottom: 56px;
   height: 100%;
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -53,6 +58,7 @@ defineProps({
 }
 
 .header-title {
+  font-family: "Mulish", sans-serif;
   font-size: 3.125rem;
   line-height: 5rem;
   font-weight: 900;
