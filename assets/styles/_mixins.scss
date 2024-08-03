@@ -1,0 +1,14 @@
+@mixin gradient-bg($start-color, $end-color) {
+  background: linear-gradient(
+    159.13deg,
+    $start-color 51.38%,
+    $end-color 125.72%
+  );
+}
+
+@mixin flex($flex-direction, $align-items, $justify-content) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
