@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
-
   css: ["@/assets/styles/main.scss"],
   vite: {
     css: {
@@ -14,7 +13,12 @@ export default defineNuxtConfig({
       },
     },
   },
-  modules: ["nuxt-svgo"],
+  modules: ["nuxt-svgo", "nuxt-snackbar"],
+  snackbar: {
+    top: true,
+    left: true,
+    duration: 5000,
+  },
   svgo: {
     defaultImport: "component",
   },
