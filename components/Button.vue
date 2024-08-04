@@ -41,7 +41,7 @@ const buttonStyle = computed(() => ({
   border-radius: 0.5rem;
   cursor: pointer;
   transition: 0.3s all;
-  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
   &:hover {
     background-color: lighten($secondary-color, 10%);
   }

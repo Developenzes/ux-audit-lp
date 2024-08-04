@@ -3,16 +3,14 @@ defineProps({
   data: Object,
 });
 
-const showAlert = () => {
-  alert("Button clicked!");
-};
+const { openModal } = useModal();
 </script>
 
 <template>
   <header class="header">
     <section class="container header-container">
       <SvgoLogo class="logo" />
-      <Button class="button" :text="data.buttonText" :onClick="showAlert" />
+      <Button class="button" :text="data.buttonText" :onClick="openModal" />
       <h1 class="header-title">
         {{ data.title }}
       </h1>

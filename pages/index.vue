@@ -1,3 +1,7 @@
+<script setup>
+const { closeModal, isModalVisible } = useModal();
+</script>
+
 <template>
   <main class="container main">
     <TopSection />
@@ -5,6 +9,9 @@
     <Testimonials />
     <ResultsWay />
     <BottomSection />
+    <Modal :isVisible="isModalVisible" :closeModal="closeModal">
+      <Form :closeModal="closeModal" />
+    </Modal>
   </main>
 </template>
 
