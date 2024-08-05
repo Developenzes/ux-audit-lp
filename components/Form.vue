@@ -107,11 +107,6 @@ textarea {
   &::placeholder {
     color: $neutral-3;
   }
-  &:required {
-    &:invalid {
-      box-shadow: 0 0 2px 2px $secondary-color;
-    }
-  }
 }
 
 .submit-button {
