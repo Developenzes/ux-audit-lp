@@ -18,6 +18,24 @@ body {
   padding-inline: 30px;
 }
 
+h1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 3.125rem;
+  line-height: 5rem;
+  font-weight: 900;
+  max-width: 70%;
+  grid-column: 1 / span 2;
+  text-align: center;
+  align-self: start;
+  @media (max-width: 768px) {
+    grid-column: 1;
+    max-width: 100%;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
+    order: 1;
+  }
+}
+
 h2 {
   font-size: 3rem;
   font-weight: 700;

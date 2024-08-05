@@ -32,12 +32,14 @@ const props = defineProps({
 
 .modal-content {
   background: $bg-color;
-  padding: 20px;
+  padding: 1.25rem;
   border-radius: 8px;
   width: 90%;
-  max-width: 500px;
+  max-width: 550px;
   position: relative;
   box-shadow: 0px 32px 45px 0px #00000026;
+  overflow-y: auto;
+  max-height: 100%;
 }
 
 .close-button {
@@ -52,5 +54,9 @@ const props = defineProps({
   background-color: $secondary-color;
   width: 40px;
   height: 40px;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: lighten($secondary-color, 10%);
+  }
 }
 </style>

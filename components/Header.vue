@@ -11,7 +11,7 @@ const { openModal } = useModal();
     <section class="container header-container">
       <SvgoLogo class="logo" />
       <Button class="button" :text="data.buttonText" :onClick="openModal" />
-      <h1 class="header-title">
+      <h1>
         {{ data.title }}
       </h1>
     </section>
@@ -52,24 +52,6 @@ const { openModal } = useModal();
   justify-self: start;
   @media (max-width: 768px) {
     order: 0;
-  }
-}
-
-.header-title {
-  font-family: "Mulish", sans-serif;
-  font-size: 3.125rem;
-  line-height: 5rem;
-  font-weight: 900;
-  max-width: 70%;
-  grid-column: 1 / span 2;
-  text-align: center;
-  align-self: start;
-  @media (max-width: 768px) {
-    grid-column: 1;
-    max-width: 100%;
-    font-size: 1.875rem;
-    line-height: 2.8125rem;
-    order: 1;
   }
 }
 

@@ -26,6 +26,7 @@ const { closeModal, isModalVisible } = useModal();
   @media (max-width: 768px) {
     padding-top: 50px;
     gap: 50px;
+    padding-bottom: 90px;
   }
 }
 </style>

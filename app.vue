@@ -11,6 +11,7 @@ useHead({
     <NuxtLayout>
       <Header v-for="item of data" :key="item.header" :data="item.header" />
       <NuxtPage />
+      <Footer />
       <NuxtSnackbar />
     </NuxtLayout>
   </div>

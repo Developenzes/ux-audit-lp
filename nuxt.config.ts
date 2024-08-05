@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   snackbar: {
     top: true,
     left: true,
-    duration: 5000,
+    duration: 3000,
   },
   svgo: {
     defaultImport: "component",
